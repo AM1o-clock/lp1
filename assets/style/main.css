@@ -1,0 +1,666 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+    line-height: 1;
+}
+
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 共通スタイル
+------------------------------------------ */
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 6.9rem;
+    width: 30.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.7rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgba(255, 85, 85, 0.1);
+    margin-bottom: 2.4rem;
+}
+
+.contact-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 1.2rem;
+}
+
+.button.contact-button {
+    color: #FFF;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 113, 224, 1) 0%, rgba(83, 162, 240, 1) 100%);
+}
+
+
+@media (min-width: 768px) {
+    .no-pc {
+        display: none;
+    }
+
+    .button {
+        height: 6.1rem;
+        width: 28.2rem;
+        border-radius: 5rem;
+        color: #FFF;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 113, 224, 1) 0%, rgba(83, 162, 240, 1) 100%);
+    }
+
+    .section-title {
+        font-size: 3.6rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .contact {
+        padding-top: 5.6rem;
+        padding-bottom: 5.6rem;
+        background-color: #FFEDED;
+        margin-bottom: 7.2rem;
+    }
+
+    .contact-text {
+        margin-bottom: 2rem;
+    }
+
+    .button.contact-button {
+        font-size: 2.4rem;
+        height: 7.5rem;
+        width: 36rem;
+    }
+
+}
+
+
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    padding-left: 1.6rem;
+    background-color: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container h1 {
+    font-family: poppins;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #005BAC;
+}
+
+.hamburger-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 7rem;
+    width: 7rem;
+    background-color: #005BAC;
+    color: #FFF;
+    font-size: 5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-button-bar {
+    width: 3rem;
+    height: .475rem;
+    background-color: #fff;
+    border-radius: .15rem;
+
+}
+
+@media (max-width: 767.9px) {
+    .hamburger-menu {
+        position: fixed;
+        top: 7rem;
+        left: 100%;
+        width: 100%;
+        height: 33.1rem;
+        padding: 2rem 2rem 3.2rem;
+        background-color: #005BAC;
+        color: #FFF;
+        transition: all 0.6s;
+        visibility: hidden;
+    }
+
+    .header-nav li {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba(252, 252, 252, 0.5);
+        align-items: center;
+    }
+
+    .header-nav a {
+        color: #FFF;
+        font-size: 1.8rem;
+    }
+
+    .header-nav i {
+        font-size: 2.6rem;
+        margin-right: .8rem;
+        vertical-align: -.3rem;
+    }
+
+    .hamburger-menu .button {
+        color: #005BAC;
+        background-color: #FFF;
+        height: 6.6rem;
+        width: 100%;
+        font-size: 1.8rem;
+        margin-top: 3.2rem;
+    }
+
+}
+
+.hamburger-menu-active {
+    left: 0;
+    visibility: visible;
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        height: 10.1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+    }
+
+    .header .container h1 {
+        font-size: 3.2rem;
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        height: 10.1rem;
+        display: flex;
+        column-gap: 4.8rem;
+        align-items: center;
+    }
+
+    .header-nav-list {
+        display: flex;
+        column-gap: 4.8rem;
+    }
+
+    .header-nav a {
+        color: #333;
+        font-size: 2rem;
+    }
+
+    .hamburger-menu .button {
+        height: 6.1rem;
+        width: 28.2rem;
+        border-radius: 5rem;
+        font-size: 2rem;
+        color: #FFF;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 113, 224, 1) 0%, rgba(83, 162, 240, 1) 100%);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1121px) {
+    .header .container h1 {
+        font-size: 2.85vw;
+    }
+
+    .hamburger-menu {
+        margin-left: 3.28vw;
+        column-gap: 3.28vw;
+    }
+
+    .header-nav-list {
+        column-gap: 3.28vw;
+    }
+
+    .header-nav a {
+        font-size: 1.78vw;
+    }
+
+    .hamburger-menu .button {
+        height: 5.43vw;
+        width: 25.13vw;
+        border-radius: 5rem;
+        font-size: 1.78vw;
+    }
+}
+
+
+
+/* カバー
+------------------------------------------ */
+.cover {
+    margin-top: 7rem;
+    background-image: url(../image/mainVIsual_sp.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 4.26vw;
+    margin-bottom: 21.6rem;
+    position: relative;
+}
+
+.cover-index {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.07rem;
+}
+
+.cover-index::before {
+    content: '';
+    background-image: url(../image/frame-left.png);
+    background-size: contain;
+    height: 6.865rem;
+    width: 2.407rem;
+}
+
+.cover-index::after {
+    content: '';
+    background-image: url(../image/frame-right.png);
+    background-size: contain;
+    height: 6.865rem;
+    width: 2.407rem;
+}
+
+.cover-index-caption-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cover-index-caption-small {
+    font-family: poppins;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #F11F8D;
+    line-height: 1.5;
+}
+
+.cover-index-caption-large {
+    font-family: poppins;
+    font-size: 3.6rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #F11F8D;
+    line-height: 1.5;
+}
+
+.cover-caption {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+}
+
+.cover-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #005BAC;
+    line-height: 1.5;
+}
+
+.cover-contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    position: absolute;
+    transform: translate(-50%, 0);
+    top: 100%;
+    left: 50%;
+}
+
+.cover-contact-button {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #FFF;
+    height: 4.8rem;
+    width: 25rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-contact-button a {
+    color: #FFF;
+}
+
+.cover-contact-button:nth-child(1) {
+    background-color: #77CB33;
+}
+
+.cover-contact-button:nth-child(2) {
+    background-color: #F6AA00;
+}
+
+.cover-contact-button:nth-child(3) {
+    background-color: #3AC8AD;
+}
+
+
+@media (min-width: 768px) {
+    .cover {
+        margin-top: 10.1rem;
+        background-image: url(../image/mainVIsual_pc.jpg);
+        background-position: center;
+        height: 65.1rem;
+        padding-left: calc((100vw - 110rem)/2);
+        margin-bottom: 10.9rem;
+    }
+
+    .cover-index {
+        margin-bottom: 3.3rem;
+    }
+
+    .cover-index::before,
+    .cover-index::after {
+        height: 15rem;
+        width: 5.26rem;
+    }
+
+    .cover-index-caption-text {
+        font-size: 2rem;
+    }
+
+    .cover-index-caption-small {
+        font-size: 5.4rem;
+    }
+
+    .cover-index-caption-large {
+        font-size: 7.4rem;
+    }
+
+    .cover-caption {
+        font-size: 3.3rem;
+    }
+
+    .cover-title {
+        font-size: 6rem;
+    }
+
+    .cover-contact {
+        flex-direction: row;
+        column-gap: 4rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .cover-contact-button {
+        font-size: 2.4rem;
+        height: 7.5rem;
+        width: 34rem;
+        border-radius: 5rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1219px) {
+    .cover {
+        padding-left: 4.92vw;
+    }
+
+    .cover-contact-button {
+        font-size: 1.96vw;
+        height: 6.14vw;
+        width: 27.86vw;
+    }
+
+}
+
+
+/* 選ばれる3つの理由
+------------------------------------------ */
+.reason.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.6rem;
+}
+
+.title-poppins {
+    font-family: poppins;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #F11F8D;
+}
+
+.reason-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.6rem;
+}
+
+.reason-list-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+}
+
+.reason-list-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.reason-list-item-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.reason-list-item-text-number {
+    font-family: poppins;
+    font-style: italic;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #F11F8D;
+}
+
+.reason-poppins-large {
+    font-size: 3.6rem;
+}
+
+.reason-list-item-text-title {
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+.reason-list-item-text-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .reason.container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 7.2rem;
+    }
+
+    .title-poppins {
+        font-size: 5.4rem;
+    }
+
+    .reason-list {
+        row-gap: 4.8rem;
+
+    }
+
+    .reason-list-item {
+        flex-direction: row;
+        column-gap: 4rem;
+        justify-content: center;
+    }
+
+    .reason-list-item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .reason-list-item img {
+        border-radius: 1rem;
+        width: calc((100% - 4rem)/2);
+    }
+
+    .reason-list-item-text {
+        width: calc((100% - 4rem)/2);
+    }
+
+    .reason-list-item-text-number {
+        font-size: 2.8rem;
+    }
+
+    .reason-poppins-large {
+        font-size: 4.2rem;
+    }
+
+    .reason-list-item-text-title {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1219px) {
+    .reason.container {
+        padding-left: 1.64vw;
+        padding-right: 1.64vw;
+    }
+
+    .reason-list-item img {
+        border-radius: 1rem;
+        width: calc((100% - 6.55vw)/2);
+    }
+
+    .reason-list-item-text {
+        width: calc((100% - 6.55vw)/2);
+    }
+
+    .reason-list-item-text-number {
+        font-size: 2.29vw;
+    }
+
+    .reason-poppins-large {
+        font-size: 3.44vw;
+    }
+
+    .reason-list-item {
+        column-gap: 3.27vw;
+    }
+
+    .reason-list-item-text-title {
+        font-size: 1.96vw;
+        margin-bottom: 1.63vw;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 772px) {
+    .reason-list-item-text-description {
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* コース・目的
+------------------------------------------ */
+
+
+/* 費用
+------------------------------------------ */
+
+
+/* フッター
+------------------------------------------ */
