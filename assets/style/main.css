@@ -67,7 +67,7 @@ li {
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: rgba(255, 85, 85, 0.1);
-    margin-bottom: 2.4rem;
+    margin-bottom: 6.4rem;
 }
 
 .contact-text {
@@ -82,6 +82,21 @@ li {
 .button.contact-button {
     color: #FFF;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 113, 224, 1) 0%, rgba(83, 162, 240, 1) 100%);
+    opacity: 1;
+    transition: .3s;
+}
+
+.button.contact-button:hover {
+    opacity: .6;
+    margin-left: 2rem;
+}
+
+.button.contact-button:hover::after {
+    opacity: 1;
+}
+
+.contact.contact-last {
+    margin-bottom: 0;
 }
 
 
@@ -118,6 +133,10 @@ li {
         font-size: 2.4rem;
         height: 7.5rem;
         width: 36rem;
+    }
+
+    .button.contact-button:hover {
+        margin-left: 0;
     }
 
 }
@@ -176,7 +195,15 @@ li {
     height: .475rem;
     background-color: #fff;
     border-radius: .15rem;
+}
 
+.hamburger-menu .button {
+    opacity: 1;
+    transition: .3s;
+}
+
+.hamburger-menu .button:hover {
+    opacity: .6;
 }
 
 @media (max-width: 767.9px) {
@@ -259,6 +286,10 @@ li {
     .header-nav a {
         color: #333;
         font-size: 2rem;
+    }
+
+    .header-nav a:hover {
+        color: #005BAC;
     }
 
     .hamburger-menu .button {
@@ -405,6 +436,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transition: .3s;
 }
 
 .cover-contact-button a {
@@ -421,6 +454,10 @@ li {
 
 .cover-contact-button:nth-child(3) {
     background-color: #3AC8AD;
+}
+
+.cover-contact-button:hover {
+    opacity: .6;
 }
 
 
@@ -656,11 +693,341 @@ li {
 
 /* コース・目的
 ------------------------------------------ */
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.3rem;
+}
 
+.course .section-title {
+    margin-bottom: 2.1rem;
+}
+
+.course .st-theme-basic {
+    border: none;
+}
+
+.course .st.st-justified>.nav .nav-link,
+.course .st.st-justified>.nav>li {
+    flex-grow: 0;
+}
+
+.tab.st>.nav {
+    display: flex;
+    flex-direction: row !important;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.course .st-theme-basic>.nav {
+    box-shadow: none;
+}
+
+.tab.st-theme-basic>.nav .nav-link {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 2rem 1.9rem;
+    height: 6.6rem;
+    width: 16.4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #F0F0F0;
+}
+
+
+.tab.st-theme-basic>.nav .nav-link.active {
+    color: #333 !important;
+    background-color: #F2F9FF;
+}
+
+.tab.st-theme-basic>.nav .nav-link.active::after {
+    background-color: unset !important;
+}
+
+.tab-content.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    background-color: #F2F9FF;
+}
+
+.tab-content-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.8rem;
+}
+
+.tab-content-item img {
+    border-radius: .5rem;
+    margin-bottom: 1.2rem;
+}
+
+.tab-content-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.tab-content-title i {
+    font-size: 2.6rem;
+    margin-right: .8rem;
+    vertical-align: -.3rem;
+    color: #005BAC;
+}
+
+@media (min-width: 768px) {
+    .course {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 7.2rem;
+    }
+
+    .course .section-title {
+        margin-bottom: 3.2rem;
+    }
+
+    .tab.st>.nav {
+        column-gap: 3.5rem;
+    }
+
+    .tab.st-theme-basic>.nav .nav-link {
+        font-size: 2.4rem;
+        padding: 2rem 0;
+        height: 7.5rem;
+        width: 56rem;
+    }
+
+    .tab-content.container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 3.1rem;
+        padding: 3.2rem 2.6rem;
+        height: 85.2rem;
+        width: 116rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .tab-content-item {
+        width: calc(( 116rem - 8.3rem)/2);
+        margin-bottom: 4rem;
+    }
+
+    .tab-content-item img {
+        border-radius: 1rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .tab-content-title {
+        font-size: 2rem;
+    }
+
+    .tab-content-title i {
+        font-size: 3.4rem;
+        margin-right: 1.2rem;
+        vertical-align: -.6rem;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1219px) {
+    .course {
+        padding-left: 1.64vw;
+        padding-right: 1.64vw;
+    }
+
+    .tab.st>.nav {
+        column-gap: 2.9vw;
+    }
+
+    .tab.st-theme-basic>.nav .nav-link {
+        width: 45.9vw;
+    }
+
+    .tab-content.container {
+        padding: 2.62vw 2.13vw;
+        width: 95.08vw;
+    }
+
+    .tab-content-item {
+        width: calc(( 95.9vw - 6.55vw)/2);
+        margin-bottom: 2.58vw;
+    }
+
+}
 
 /* 費用
 ------------------------------------------ */
+.price.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.6rem;
+    margin-bottom: 6.3rem;
+}
 
+th {
+    font-weight: 400;
+}
+.price-table{
+    border: solid 3px #ccc;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+    text-align: end;
+    line-height: 1;
+}
+
+.price-table-head {
+    padding: 2rem 0 1.9rem;
+    width: 12rem;
+    text-align: center;
+    border: solid 1px #ccc;
+    background-color: #F5F5F5;
+}
+
+.price-table-amount {
+    padding: 2rem 4.4rem 1.9rem 0;
+    width: 12rem;
+    border: solid 1px #ccc;
+}
+
+.price-table-price {
+    padding: 2rem 6rem 1.9rem 0;
+    width: 22.5rem;
+    color: #F23397;
+    font-family: poppins;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border: solid 1px #ccc;
+}
+
+.yen {
+    font-family: noto sans jp;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .price.container {
+        padding: 0 2rem;
+        margin-bottom: 7.2rem;
+    }
+
+    .price-table {
+        font-size: 1.8rem;
+    }
+
+    .price-table-head {
+        padding: 2.4rem 0;
+        width: 14.4rem;
+    }
+
+    .price-table-amount {
+        padding: 2.6rem 5.6rem 2.5rem 0;
+        width: 14.4rem;
+    }
+
+    .price-table-price {
+        padding: 2.6rem 16.4rem 2.5rem 0;
+        width: 45.5rem;
+        font-size: 3.2rem;
+    }
+
+    .yen {
+        font-size: 1.8rem;
+    }
+
+}
+
+
+/* よくあるご質問・お近くの教室を探す
+------------------------------------------ */
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-content {
+    display: flex;
+    height: 17rem;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    padding-left: 1.6rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-size: cover;
+    background-position: top;
+    opacity: 1;
+    transition: .3s;
+}
+
+.search-content:hover {
+    background-size: 120%;
+    opacity: .6;
+}
+
+.search-content a {
+    color: #FFF;
+}
+
+.search-content.content1 {
+    background-image: url(../image/pht_qa_sp.jpg);
+}
+
+.search-content.content2 {
+    background-image: url(../image/pht_classrooms_sp.jpg);
+}
+
+@media (min-width: 768px) {
+    .search {
+        flex-direction: row;
+    }
+
+    .search-content {
+        text-align: center;
+        justify-content: center;
+        height: 32rem;
+        width: 50vw;
+        font-size: 3.2rem;
+    }
+
+    .search-content:hover {
+        background-size: auto 120%;
+    }
+
+    .search-content.content1 {
+        background-image: url(../image/pht_qa_pc.jpg);
+    }
+
+    .search-content.content2 {
+        background-image: url(../image/pht_classrooms_pc.jpg);
+    }
+
+}
 
 /* フッター
 ------------------------------------------ */
+footer {
+    background-color: #ddd;
+    font-family: poppins;
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    height: 8.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    footer {
+        height: 12rem;
+    }
+
+}
