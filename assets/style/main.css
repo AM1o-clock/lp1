@@ -17,7 +17,7 @@ body {
 a,
 a:hover {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 img {
@@ -56,7 +56,7 @@ li {
     font-size: 2.8rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 1.7rem;
+    margin-bottom: 2.5rem;
 }
 
 .contact {
@@ -64,10 +64,10 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 3.9rem;
     padding-bottom: 4rem;
     background-color: rgba(255, 85, 85, 0.1);
-    margin-bottom: 6.4rem;
+    margin-bottom: 7rem;
 }
 
 .contact-text {
@@ -75,9 +75,13 @@ li {
     font-weight: 400;
     color: #333;
     text-align: center;
-    line-height: 2;
-    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
 }
+
+.contact2 .contact-text{
+    margin-bottom: 1.05rem;
+    }
 
 .button.contact-button {
     color: #FFF;
@@ -99,10 +103,20 @@ li {
     margin-bottom: 0;
 }
 
+@media (max-width: 767.9px) {
+    .no-sp {
+        display: none;
+    }
+
+}
 
 @media (min-width: 768px) {
     .no-pc {
         display: none;
+    }
+
+    .no-sp {
+        display: block;
     }
 
     .button {
@@ -115,24 +129,33 @@ li {
 
     .section-title {
         font-size: 3.6rem;
-        margin-bottom: 3.2rem;
+        margin-bottom: 4.3rem;
     }
 
     .contact {
-        padding-top: 5.6rem;
+        padding-top: 5.5rem;
         padding-bottom: 5.6rem;
         background-color: #FFEDED;
-        margin-bottom: 7.2rem;
+        margin-bottom: 8rem;
     }
 
     .contact-text {
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
     }
+
+    .contact2 .contact-text{
+        margin-bottom: 1.75rem;
+        }
+
+        .contact.contact-last .contact-text {
+            margin-bottom: 1.75rem;
+        }
 
     .button.contact-button {
         font-size: 2.4rem;
         height: 7.5rem;
         width: 36rem;
+        padding-left: 2.2rem;
     }
 
     .button.contact-button:hover {
@@ -154,7 +177,6 @@ li {
     display: flex;
     height: 7rem;
     align-items: center;
-    padding-left: 1.6rem;
     background-color: #FFF;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
@@ -163,6 +185,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 1.5;
 }
 
 .header .container h1 {
@@ -213,7 +236,7 @@ li {
         left: 100%;
         width: 100%;
         height: 33.1rem;
-        padding: 2rem 2rem 3.2rem;
+        padding: 1.9rem 2rem 3.2rem;
         background-color: #005BAC;
         color: #FFF;
         transition: all 0.6s;
@@ -221,20 +244,24 @@ li {
     }
 
     .header-nav li {
-        margin-bottom: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1.8rem;
+        margin-bottom: 1.95rem;
+        line-height: 1.6;
         border-bottom: 1px solid rgba(252, 252, 252, 0.5);
         align-items: center;
     }
 
     .header-nav a {
+        display: flex;
+        margin-left: -.6rem;
         color: #FFF;
         font-size: 1.8rem;
     }
 
     .header-nav i {
         font-size: 2.6rem;
-        margin-right: .8rem;
+        line-height: 1;
+        margin-right: .65rem;
         vertical-align: -.3rem;
     }
 
@@ -247,6 +274,8 @@ li {
         margin-top: 3.2rem;
     }
 
+    .hamburger-menu .button a {
+        color: #005BAC;
 }
 
 .hamburger-menu-active {
@@ -254,6 +283,7 @@ li {
     visibility: visible;
 }
 
+}
 
 @media (min-width: 768px) {
     .header {
@@ -261,6 +291,10 @@ li {
         padding-left: 2rem;
         padding-right: 2rem;
         box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+    }
+
+    .header .container {
+        padding: 0 2rem;
     }
 
     .header .container h1 {
@@ -337,14 +371,14 @@ li {
     margin-top: 7rem;
     background-image: url(../image/mainVIsual_sp.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: right;
     height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding-left: 4.26vw;
-    margin-bottom: 21.6rem;
+    margin-bottom: 22.4rem;
     position: relative;
 }
 
@@ -354,7 +388,7 @@ li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.07rem;
+    margin-bottom: 1.8rem;
 }
 
 .cover-index::before {
@@ -377,7 +411,9 @@ li {
     font-size: 1.1rem;
     font-weight: 400;
     color: #333;
-    line-height: 1.5;
+    line-height: 1;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
 }
 
 .cover-index-caption-small {
@@ -409,7 +445,7 @@ li {
     font-size: 2.5rem;
     font-weight: 900;
     color: #005BAC;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .cover-contact {
@@ -463,16 +499,18 @@ li {
 
 @media (min-width: 768px) {
     .cover {
-        margin-top: 10.1rem;
+        justify-content: inherit;
+        margin-top: 10.2rem;
         background-image: url(../image/mainVIsual_pc.jpg);
         background-position: center;
         height: 65.1rem;
+        padding-top: 10.4rem;
         padding-left: calc((100vw - 110rem)/2);
-        margin-bottom: 10.9rem;
+        margin-bottom: 12rem;
     }
 
     .cover-index {
-        margin-bottom: 3.3rem;
+        margin-bottom: 3.2rem;
     }
 
     .cover-index::before,
@@ -483,10 +521,12 @@ li {
 
     .cover-index-caption-text {
         font-size: 2rem;
+        margin: 1rem 2rem .1rem 1.95rem;
     }
 
     .cover-index-caption-small {
         font-size: 5.4rem;
+        margin-left: 1rem;
     }
 
     .cover-index-caption-large {
@@ -495,10 +535,13 @@ li {
 
     .cover-caption {
         font-size: 3.3rem;
+        margin-bottom: .45rem;
+
     }
 
     .cover-title {
         font-size: 6rem;
+        line-height: 85/60;
     }
 
     .cover-contact {
@@ -538,7 +581,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3.6rem;
+    margin-bottom: 3.5rem;
 }
 
 .title-poppins {
@@ -551,7 +594,7 @@ li {
 .reason-list {
     display: flex;
     flex-direction: column;
-    row-gap: 3.6rem;
+    row-gap: 3.4rem;
 }
 
 .reason-list-item {
@@ -579,23 +622,27 @@ li {
     font-size: 2.4rem;
     font-weight: 700;
     color: #F11F8D;
+    margin-bottom: -.2rem;
 }
 
 .reason-poppins-large {
     font-size: 3.6rem;
+    padding-left: .2rem;
 }
 
 .reason-list-item-text-title {
     font-size: 2.0rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 1.1rem;
 }
 
 .reason-list-item-text-description {
     font-size: 1.6rem;
     font-weight: 400;
     color: #333;
+    line-height: 1.74;
 }
 
 @media (min-width: 768px) {
@@ -627,6 +674,7 @@ li {
     .reason-list-item img {
         border-radius: 1rem;
         width: calc((100% - 4rem)/2);
+        aspect-ratio: 560/346;
     }
 
     .reason-list-item-text {
@@ -635,15 +683,20 @@ li {
 
     .reason-list-item-text-number {
         font-size: 2.8rem;
+        line-height: 1.28;
+        margin-top: .3rem;
+        margin-bottom: -.1rem;
     }
 
     .reason-poppins-large {
         font-size: 4.2rem;
+        margin-left: -.1rem;
     }
 
     .reason-list-item-text-title {
         font-size: 2.4rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.45rem;
+        line-height: 1.75;
     }
 
 }
@@ -678,7 +731,6 @@ li {
     .reason-list-item-text-title {
         font-size: 1.96vw;
         margin-bottom: 1.63vw;
-
     }
 
 }
@@ -701,7 +753,8 @@ li {
 }
 
 .course .section-title {
-    margin-bottom: 2.1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2.7rem;
 }
 
 .course .st-theme-basic {
@@ -728,11 +781,11 @@ li {
     font-size: 1.8rem;
     font-weight: 700;
     color: rgba(51, 51, 51, 0.5);
-    padding: 2rem 1.9rem;
+    padding: 2.4rem 1.9rem;
     height: 6.6rem;
     width: 16.4rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
     background-color: #F0F0F0;
 }
 
@@ -751,13 +804,18 @@ li {
     flex-direction: column;
     padding-top: 2.8rem;
     padding-bottom: 2.8rem;
+    width: 100vw;
     background-color: #F2F9FF;
+}
+
+.st>.tab-content>.tab-pane {
+    padding: 0;
 }
 
 .tab-content-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.7rem;
 }
 
 .tab-content-item img {
@@ -769,12 +827,14 @@ li {
     font-size: 2rem;
     font-weight: 700;
     color: #333;
+    display: flex;
+    line-height: 1.5;
+    margin-left: -.8rem;
 }
 
 .tab-content-title i {
-    font-size: 2.6rem;
-    margin-right: .8rem;
-    vertical-align: -.3rem;
+    font-size: 3rem;
+    line-height: .9;
     color: #005BAC;
 }
 
@@ -786,7 +846,8 @@ li {
     }
 
     .course .section-title {
-        margin-bottom: 3.2rem;
+        margin-left: 0;
+        margin-bottom: 4rem;
     }
 
     .tab.st>.nav {
@@ -795,39 +856,55 @@ li {
 
     .tab.st-theme-basic>.nav .nav-link {
         font-size: 2.4rem;
-        padding: 2rem 0;
+        padding: 2.6rem 0;
+        margin-right: .3rem;
         height: 7.5rem;
         width: 56rem;
     }
 
     .tab-content.container {
         flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 3.1rem;
-        padding: 3.2rem 2.6rem;
+        flex-wrap: nowrap;
+        column-gap: 3.6rem;
+        padding: 3.2rem;
         height: 85.2rem;
         width: 116rem;
+        padding-bottom: 0;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
     }
 
+    .st>.tab-content>.tab-pane {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 3.1rem;
+    }
+
     .tab-content-item {
-        width: calc(( 116rem - 8.3rem)/2);
-        margin-bottom: 4rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .tab-content-item.tab-content-item3,
+    .tab-content-item.tab-content-item4 {
+        margin-bottom: 2.9rem;
     }
 
     .tab-content-item img {
         border-radius: 1rem;
-        margin-bottom: 1.6rem;
+        aspect-ratio: 532 / 329;
+        margin-bottom: 1.2rem;
     }
 
     .tab-content-title {
         font-size: 2rem;
+        line-height: 1.8;
+        margin-left: -1rem;
     }
 
     .tab-content-title i {
-        font-size: 3.4rem;
-        margin-right: 1.2rem;
+        font-size: 3.6rem;
+        margin-right: .3rem;
         vertical-align: -.6rem;
     }
 
@@ -852,8 +929,12 @@ li {
         width: 95.08vw;
     }
 
+    .st>.tab-content>.tab-pane {
+        column-gap: 2.67vw;
+    }
+
     .tab-content-item {
-        width: calc(( 95.9vw - 6.55vw)/2);
+        width: calc(531.9 / 1096 * 100%);
         margin-bottom: 2.58vw;
     }
 
@@ -866,7 +947,12 @@ li {
     flex-direction: column;
     align-items: center;
     padding: 0 1.6rem;
-    margin-bottom: 6.3rem;
+    margin-bottom: 6.4rem;
+}
+
+.price.container .section-title {
+    margin-left: 1.5rem;
+    margin-bottom: 2.65rem;
 }
 
 th {
@@ -883,22 +969,28 @@ th {
 }
 
 .price-table-head {
-    padding: 2rem 0 1.9rem;
+    padding: 2.4rem 0;
     width: 12rem;
     text-align: center;
     border: solid 1px #ccc;
     background-color: #F5F5F5;
 }
 
+.price-table-head2 {
+    padding-right: 1.5rem;
+}
+
 .price-table-amount {
-    padding: 2rem 4.4rem 1.9rem 0;
+    padding-top: 2rem;
+    padding-bottom: 1.9rem;
     width: 12rem;
+    text-align: center;
     border: solid 1px #ccc;
 }
 
 .price-table-price {
-    padding: 2rem 6rem 1.9rem 0;
-    width: 22.5rem;
+    padding: 1.8rem 5.7rem 1.7rem 0;
+    width: 22.7rem;
     color: #F23397;
     font-family: poppins;
     font-size: 2.8rem;
@@ -906,10 +998,14 @@ th {
     border: solid 1px #ccc;
 }
 
+.price-table-price-last {
+    padding-bottom: 1.4rem;
+}
+
 .yen {
     font-family: noto sans jp;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -918,24 +1014,35 @@ th {
         margin-bottom: 7.2rem;
     }
 
+    .price.container .section-title {
+        margin-left: 0;
+        margin-bottom: 4.05rem;
+    }
+
     .price-table {
         font-size: 1.8rem;
     }
 
     .price-table-head {
-        padding: 2.4rem 0;
-        width: 14.4rem;
+        padding: 2.8rem 0;
+        width: 14.3rem;
     }
 
     .price-table-amount {
-        padding: 2.6rem 5.6rem 2.5rem 0;
-        width: 14.4rem;
+        padding: 2.5rem 0;
+        width: 14.3rem;
+        line-height: 1.5;
     }
 
     .price-table-price {
-        padding: 2.6rem 16.4rem 2.5rem 0;
-        width: 45.5rem;
+        padding: 1.5rem 16.1rem 1.5rem 0;
+        width: 45.4rem;
         font-size: 3.2rem;
+        line-height: 1.125;
+    }
+
+    .price-table-amount-last {
+        padding-bottom: 2.2rem;
     }
 
     .yen {
@@ -945,7 +1052,8 @@ th {
 }
 
 
-/* よくあるご質問・お近くの教室を探す
+
+/* フッター
 ------------------------------------------ */
 .search {
     display: flex;
@@ -961,8 +1069,9 @@ th {
     padding-left: 1.6rem;
     font-size: 2.2rem;
     font-weight: 700;
+    line-height: 1.5;
     background-size: cover;
-    background-position: top;
+    background-position:left;
     opacity: 1;
     transition: .3s;
 }
@@ -984,6 +1093,23 @@ th {
     background-image: url(../image/pht_classrooms_sp.jpg);
 }
 
+.footer_copyright {
+    background-color: #ddd;
+    font-family: poppins;
+    color: #333;
+    text-align: center;
+    height: 8.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.4rem;
+}
+
+.footer_copyright small {
+    font-size: 1.3rem;
+}
+
+
 @media (min-width: 768px) {
     .search {
         flex-direction: row;
@@ -992,13 +1118,17 @@ th {
     .search-content {
         text-align: center;
         justify-content: center;
-        height: 32rem;
+        background-size: 100%;
+        background-position: center;
         width: 50vw;
+        height: auto;
+        aspect-ratio: 960 / 320;
         font-size: 3.2rem;
+        padding-left: 0;
     }
 
     .search-content:hover {
-        background-size: auto 120%;
+        background-size: 120%;
     }
 
     .search-content.content1 {
@@ -1009,25 +1139,12 @@ th {
         background-image: url(../image/pht_classrooms_pc.jpg);
     }
 
-}
-
-/* フッター
------------------------------------------- */
-footer {
-    background-color: #ddd;
-    font-family: poppins;
-    font-size: 1.3rem;
-    color: #333;
-    text-align: center;
-    height: 8.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (min-width: 768px) {
-    footer {
+    .footer_copyright {
         height: 12rem;
+        padding-left: 0;
+        padding-bottom: .3rem;
     }
+
+}
 
 }

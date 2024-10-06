@@ -18,6 +18,8 @@ $('.header-nav-list-item').on('click', function () {
 //スマートタブ
 
 $('#smarttab').smartTab({
-    enableUrlHash: false
+    enableUrlHash: false,
+    autoAdjustHeight: false,
 });
+
 
