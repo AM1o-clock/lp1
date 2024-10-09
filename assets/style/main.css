@@ -79,9 +79,9 @@ li {
     margin-bottom: 1rem;
 }
 
-.contact2 .contact-text{
+.contact2 .contact-text {
     margin-bottom: 1.05rem;
-    }
+}
 
 .button.contact-button {
     color: #FFF;
@@ -143,13 +143,13 @@ li {
         margin-bottom: 1.8rem;
     }
 
-    .contact2 .contact-text{
+    .contact2 .contact-text {
         margin-bottom: 1.75rem;
-        }
+    }
 
-        .contact.contact-last .contact-text {
-            margin-bottom: 1.75rem;
-        }
+    .contact.contact-last .contact-text {
+        margin-bottom: 1.75rem;
+    }
 
     .button.contact-button {
         font-size: 2.4rem;
@@ -189,10 +189,7 @@ li {
 }
 
 .header .container h1 {
-    font-family: poppins;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #005BAC;
+    line-height: 1;
 }
 
 .hamburger-button {
@@ -230,6 +227,10 @@ li {
 }
 
 @media (max-width: 767.9px) {
+    .header .container h1 {
+        width: 16.6rem;
+    }
+
     .hamburger-menu {
         position: fixed;
         top: 7rem;
@@ -276,12 +277,12 @@ li {
 
     .hamburger-menu .button a {
         color: #005BAC;
-}
+    }
 
-.hamburger-menu-active {
-    left: 0;
-    visibility: visible;
-}
+    .hamburger-menu-active {
+        left: 0;
+        visibility: visible;
+    }
 
 }
 
@@ -339,16 +340,16 @@ li {
 
 @media (min-width: 768px) and (max-width: 1121px) {
     .header .container h1 {
-        font-size: 2.85vw;
+        width: 21.49vw;
     }
 
     .hamburger-menu {
-        margin-left: 3.28vw;
-        column-gap: 3.28vw;
+        margin-left: 2vw;
+        column-gap: 2vw;
     }
 
     .header-nav-list {
-        column-gap: 3.28vw;
+        column-gap: 2vw;
     }
 
     .header-nav a {
@@ -448,6 +449,10 @@ li {
     line-height: 1.4;
 }
 
+.cover-title span {
+    display: block;
+}
+
 .cover-contact {
     display: flex;
     flex-direction: column;
@@ -536,12 +541,11 @@ li {
     .cover-caption {
         font-size: 3.3rem;
         margin-bottom: .45rem;
-
     }
 
     .cover-title {
         font-size: 6rem;
-        line-height: 85/60;
+        line-height: 1.41;
     }
 
     .cover-contact {
@@ -818,10 +822,53 @@ li {
     margin-bottom: 2.7rem;
 }
 
-.tab-content-item img {
-    border-radius: .5rem;
+.tab-content-item .tab-content-img {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 343/220;
+    border-radius: 1.5rem;
+    transition: .3s;
+    background-size: 100%;
+    background-position: top;
     margin-bottom: 1.2rem;
 }
+
+.tab-content-item .tab-content-img:hover {
+    background-size: 120%;
+}
+
+#tab-1 .tab-content-item.tab-content-item1 .tab-content-img {
+    background-image: url(../image/pht_cource01.jpg);
+}
+
+#tab-1 .tab-content-item.tab-content-item2 .tab-content-img {
+    background-image: url(../image/pht_cource02.jpg);
+}
+
+#tab-1 .tab-content-item.tab-content-item3 .tab-content-img {
+    background-image: url(../image/pht_cource03.jpg);
+}
+
+#tab-1 .tab-content-item.tab-content-item4 .tab-content-img {
+    background-image: url(../image/pht_cource04.jpg);
+}
+
+#tab-2 .tab-content-item.tab-content-item1 .tab-content-img {
+    background-image: url(../image/pht_cource05.jpg);
+}
+
+#tab-2 .tab-content-item.tab-content-item2 .tab-content-img {
+    background-image: url(../image/pht_cource06.jpg);
+}
+
+#tab-2 .tab-content-item.tab-content-item3 .tab-content-img {
+    background-image: url(../image/pht_cource07.jpg);
+}
+
+#tab-2 .tab-content-item.tab-content-item4 .tab-content-img {
+    background-image: url(../image/pht_cource08.jpg);
+}
+
 
 .tab-content-title {
     font-size: 2rem;
@@ -882,6 +929,7 @@ li {
     }
 
     .tab-content-item {
+        width: 53.2rem;
         margin-bottom: 3.6rem;
     }
 
@@ -890,10 +938,41 @@ li {
         margin-bottom: 2.9rem;
     }
 
-    .tab-content-item img {
-        border-radius: 1rem;
+    .tab-content-item .tab-content-img {
         aspect-ratio: 532 / 329;
         margin-bottom: 1.2rem;
+    }
+
+    #tab-1 .tab-content-item.tab-content-item1 .tab-content-img {
+        background-image: url(../image/pht_cource01_pc.jpg);
+    }
+
+    #tab-1 .tab-content-item.tab-content-item2 .tab-content-img {
+        background-image: url(../image/pht_cource02_pc.jpg);
+    }
+
+    #tab-1 .tab-content-item.tab-content-item3 .tab-content-img {
+        background-image: url(../image/pht_cource03_pc.jpg);
+    }
+
+    #tab-1 .tab-content-item.tab-content-item4 .tab-content-img {
+        background-image: url(../image/pht_cource04_pc.jpg);
+    }
+
+    #tab-2 .tab-content-item.tab-content-item1 .tab-content-img {
+        background-image: url(../image/pht_cource05_pc.jpg);
+    }
+
+    #tab-2 .tab-content-item.tab-content-item2 .tab-content-img {
+        background-image: url(../image/pht_cource06_pc.jpg);
+    }
+
+    #tab-2 .tab-content-item.tab-content-item3 .tab-content-img {
+        background-image: url(../image/pht_cource07_pc.jpg);
+    }
+
+    #tab-2 .tab-content-item.tab-content-item4 .tab-content-img {
+        background-image: url(../image/pht_cource08_pc.jpg);
     }
 
     .tab-content-title {
@@ -934,7 +1013,7 @@ li {
     }
 
     .tab-content-item {
-        width: calc(531.9 / 1096 * 100%);
+        width: 43.6vw;
         margin-bottom: 2.58vw;
     }
 
@@ -958,7 +1037,8 @@ li {
 th {
     font-weight: 400;
 }
-.price-table{
+
+.price-table {
     border: solid 3px #ccc;
     border-collapse: collapse;
     font-size: 1.6rem;
@@ -1060,6 +1140,7 @@ th {
     flex-direction: column;
     align-items: center;
 }
+
 .search-content {
     display: flex;
     height: 17rem;
@@ -1071,7 +1152,7 @@ th {
     font-weight: 700;
     line-height: 1.5;
     background-size: cover;
-    background-position:left;
+    background-position: left;
     opacity: 1;
     transition: .3s;
 }
@@ -1144,7 +1225,5 @@ th {
         padding-left: 0;
         padding-bottom: .3rem;
     }
-
-}
 
 }
