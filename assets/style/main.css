@@ -103,6 +103,15 @@ li {
     margin-bottom: 0;
 }
 
+.contact__button--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__button--entry {
+    margin-bottom: 1.2rem;
+}
+
 @media (max-width: 767.9px) {
     .no-sp {
         display: none;
@@ -161,6 +170,16 @@ li {
     .button.contact-button:hover {
         margin-left: 0;
     }
+
+    .contact__button--container{
+        flex-direction: row;
+    }
+
+    .contact__button--entry {
+        margin-right: 4rem;
+        margin-bottom: 0;
+    }
+
 
 }
 
